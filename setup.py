@@ -1,4 +1,10 @@
 #convert our application to package
+'''
+it will create package for the folder which have __init__.py file.
+add '-e .' in requirements.txt, so that when we install packages in requirement.txt it will trigger this file
+and build a packages
+
+'''
 from setuptools import find_packages,setup
 def get_requirements(file_path):
     with open(file_path) as file_obj:
